@@ -1,0 +1,99 @@
+.stf-con {
+  background: linear-gradient(
+    to right,
+    var(--clr-dark-orange),
+    var(--clr-light-orange)
+  );
+  padding: 1rem;
+}
+
+.stf-top {
+  text-align: center;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.stf-title {
+  font-size: 4rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  opacity: 0.4;
+}
+
+.stf-p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.sft-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .stf-p {
+    font-size: 1rem;
+    margin: 0;
+    margin-top: -6rem;
+    margin-bottom: 6rem;
+  }
+
+  .stf-p::before {
+    width: 0px;
+  }
+
+  .stf-p::after {
+    width: 0px;
+  }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .stf-p {
+    font-size: 1rem;
+    margin: 0;
+    margin-top: -5.4rem;
+    margin-bottom: 6rem;
+  }
+
+  .stf-p::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--clr-black);
+    top: 83%;
+    left: 32rem;
+  }
+
+  .stf-p::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--clr-black);
+    top: 83%;
+    left: 58rem;
+  }
+
+  .stf-title {
+    font-size: 6.2rem;
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

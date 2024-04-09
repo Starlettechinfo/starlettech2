@@ -1,0 +1,8 @@
+.abt-hero-sec,
+.prof-sec {
+  background: var(--bg-lgt-drk);
+}
+
+.staff-sec {
+  background: var(--bg-drk-lgt);
+}
