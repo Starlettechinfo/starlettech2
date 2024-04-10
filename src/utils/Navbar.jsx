@@ -15,7 +15,7 @@ const Navbar = () => {
  
 
   return (
-    <div className="bg-black h-24 w-full">
+    <div className="bg-[#2B2929] h-24 w-full">
       <div className="text-white flex justify-between items-center max-w-[1240px] mx-auto px-4">
         <Link to="/">
           <img src={logo} alt="logo" className="w-[110px] pt-2" />

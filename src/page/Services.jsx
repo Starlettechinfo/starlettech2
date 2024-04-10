@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <>
       <section className="serv-hero-sec">
-        <div className="container">
+        <div >
           <ServiceHero />
         </div>
       </section>
