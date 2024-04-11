@@ -7,6 +7,7 @@ import Home from "./page/Home";
 import Services from "./page/Services";
 import Footer from "./utils/Footer";
 import Navbar from "./utils/Navbar";
+import './index.css'
 
 import "./style/style.css";
 import "./style/utils.css";

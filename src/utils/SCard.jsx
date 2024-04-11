@@ -5,7 +5,7 @@ import Digital from "../assets/social-media-marketing.png";
 import App from "../assets/mobile-development.png";
 import { Link } from "react-router-dom";
 
-import "../style/scard.css";
+
 
 export const cardDetails = [
   {
@@ -47,23 +47,26 @@ export const cardDetails = [
 
 const SCard = (props) => {
   return (
-    <>
-      <div className="main2">
-        <div className="main-card">
-          <div className="card-container">
-            <div className="card-image">
-              <img src={props.image} alt="Website" width={50} />
-            </div>
-            <h2 className="card-title">{props.title}</h2>
-            <p className="card-content">{props.content}</p>
-            <Link to={props.path}>
-              <button className="card-btn">Learn More →</button>
-            </Link>
+    <div className="w-full pt-5">
+      <div className="flex justify-center text-blue-600  ">
+        <div className="w-[350px] h-[340px] bg-[#2B2929] p-4 text-white flex flex-col items-center cursor-pointer hover:bg-white hover:text-black ease-in-out duration-500 hover:drop-shadow-lg   ">
+          <div className="w-[90px] flex items-center justify-center p-2 bg-orange-500 border-t border-gray-500 mb-4  border-br-[30px] rounded-bl-[30px] rounded-tr-[30px]">
+            <img src={props.image} alt="Website" width={50}  />
+          </div>
+          <h2 className="text-center md:text-2xl sm:text-1xl text-xl mb-4">{props.title}</h2>
+        <div className="w-[240px] h-[500px] ">
+        <p className="text-xs  ">{props.content}</p>
+        </div>
+          <div className='top-[80px] '>
+          <Link to={props.path}>
+            <button className="w-[200px] bg-[orange]  border-br-[30px] rounded-bl-[30px] rounded-tr-[30px] ">Learn More →</button>
+          </Link>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 export default SCard;
+
