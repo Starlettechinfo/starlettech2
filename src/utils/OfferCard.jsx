@@ -3,28 +3,50 @@ import photo from "../assets/Frame 7.png";
 import instagram from "../assets/image 4.png";
 import facebook from "../assets/image 5.png";
 import { ReactTyped } from "react-typed";
+import { motion } from "framer-motion";
 
 const OfferCard = (props) => {
   return (
     <div className=" mt-9">
-      <div className="grid grid-cols-1 align md:grid-cols-1 lg:grid-cols-2 gap-4 justify-center p-5">
-        <div className="offers">
-          <h1 className="font-bold md:text-2xl sm:text-xl">{props.firstTitle} <span className="text-[orange] ">{props.secondTitle}</span></h1>
-          <li className="text-[13px] ">{props.list1}</li>
-          <li className="text-[13px] ">{props.list2}</li>
-          <li className="text-[13px] ">{props.list3}</li>
-          <li className="text-[13px] ">{props.list4}</li>
-          <li className="text-[13px] ">{props.list5}</li>
-        </div>
-        <div className="choose">
-          <h1 className="font-bold md:text-2xl sm:text-xl">{props.secTitle} <span className="text-[orange] ">{props.secTitle2}</span></h1>
-          <li className="text-[13px] ">{props.slist1}</li>
-          <li className="text-[13px] ">{props.slist2}</li>
-          <li className="text-[13px] ">{props.slist3}</li>
-          <li className="text-[13px] ">{props.slist4}</li>
-          <li className="text-[13px] ">{props.slist5}</li>
-        </div>
-      </div>
+       <motion.div
+      className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 justify-center p-5"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div
+        className="offers"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <h1 className="font-bold md:text-2xl sm:text-xl">
+          {props.firstTitle} <span className="text-[orange]">{props.secondTitle}</span>
+        </h1>
+        <ul>
+          <li className="text-sm">{props.list1}</li>
+          <li className="text-sm">{props.list2}</li>
+          <li className="text-sm">{props.list3}</li>
+          <li className="text-sm">{props.list4}</li>
+          <li className="text-sm">{props.list5}</li>
+        </ul>
+      </motion.div>
+      <motion.div
+        className="choose"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <h1 className="font-bold md:text-2xl sm:text-xl">
+          {props.secTitle} <span className="text-[orange]">{props.secTitle2}</span>
+        </h1>
+        <ul>
+          <li className="text-sm">{props.slist1}</li>
+          <li className="text-sm">{props.slist2}</li>
+          <li className="text-sm">{props.slist3}</li>
+          <li className="text-sm">{props.slist4}</li>
+          <li className="text-sm">{props.slist5}</li>
+        </ul>
+      </motion.div>
+    </motion.div>
       <div className="contact-card">
         <p className="text-center mt-4 mb-4 text-[16px]"><ReactTyped
                
