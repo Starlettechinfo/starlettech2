@@ -10,7 +10,7 @@ export const cardDetails = [
   {
     image: Web,
     title: "Website Design",
-    // path: "/webdesign",
+    path: "/learnmore",
     content:
       "Step into digital excellence with our website design service. Our creative experts craft captivating and modern websites that drive  results. Stand out in the online crowd with our sleek designs and user-friendly interfaces. ",
   },
