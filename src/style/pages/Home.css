@@ -1,0 +1,13 @@
+.about-sec,
+.portfolio-sec,
+.feedback-sec {
+  background: var(--bg-drk-lgt);
+}
+
+.impact-sec {
+  background: var(--bg-lgt-drk);
+}
+
+.cta-sec {
+  background: var(--bg-gry);
+}

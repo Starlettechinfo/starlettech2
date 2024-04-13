@@ -1,0 +1,133 @@
+.stfcard-con {
+  background-color: var(--clr-light-black);
+  padding: 1rem;
+  width: 650px;
+  border-radius: 15px;
+}
+
+.stfcard-img {
+  width: 100%;
+  height: 200px;
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.stfcard-role {
+  margin-right: 2.4rem;
+  color: var(--clr-white);
+}
+
+.stf-role-1 {
+  text-transform: capitalize;
+  margin-bottom: -1.4rem;
+}
+
+.stf-role-2 {
+  text-transform: capitalize;
+  margin-bottom: -1.4rem;
+}
+
+.stf-role-3 {
+  text-transform: capitalize;
+}
+
+.resume-btn {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 20px;
+  width: 180px;
+  font-weight: 600;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-light-orange);
+  border-radius: 0px;
+}
+
+.stfcard-controls {
+  text-align: center;
+}
+
+.controls-btn {
+  border: none;
+  font-size: 4rem;
+  background-color: transparent;
+  color: var(--clr-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.controls-btn:hover {
+  color: var(--clr-grey);
+}
+
+.stf-left {
+  margin-right: 5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .stfcard-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .stfcard-img::after {
+    width: 0px;
+  }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+  .stfcard-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
+
+  .stfcard-img {
+    width: 50%;
+  }
+
+  .stfcard-img::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 160px;
+    background-color: var(--clr-white);
+    right: -2rem;
+  }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+@media (min-width: 1280px) {
+  .stfcard-img {
+    width: 54%;
+  }
+
+  .controls-btn {
+    text-align: center;
+    font-size: 8rem;
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
